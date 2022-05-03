@@ -1,0 +1,99 @@
+:root {
+  /* ## Colors
+
+    ### Primary */
+
+  --dark-violet: hsl(256, 26%, 20%);
+  --grayish-blue: hsl(216, 30%, 68%);
+
+  /* ### Neutral */
+
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+/* fonts 
+-- dmserif , serif
+-- karla , sans-serif
+*/
+@font-face {
+  font-family: "dmserif";
+  src: url(../fonts/DMSerifDisplay-Regular.ttf);
+}
+
+@font-face {
+  font-family: "karla";
+  src: url(../fonts/Karla-VariableFont_wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  color: inherit;
+  cursor: pointer;
+}
+
+body {
+  font-family: "karla", sans-serif;
+}
+
+main {
+  line-height: 1.5;
+}
+
+.image-intro {
+  width: 100%;
+  height: 450px;
+  background-image: url(../images/image-intro-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section-1 {
+  padding: 84px 5%;
+  text-align: center;
+  color: var(--very-light-gray);
+  background-color: var(--dark-violet);
+  /* background-image: url(../images/bg-pattern-intro-left-mobile.svg);
+  background-repeat: no-repeat; */
+}
+
+/* .section-1::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--dark-violet);
+} */
+
+.section-1 .title {
+  margin-top: 0;
+  font-size: 2.5em;
+  font-family: "dmserif", serif;
+  font-weight: 400;
+}
+
+.viewplans-btn {
+  margin-top: 28px;
+  width: 40%;
+  padding: 8px 0;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  border: 1px solid var(--very-light-gray);
+}
