@@ -41,14 +41,19 @@
   </head>
   <body>
     <main>
-      <nav>
-        <img src="./images/logo.svg" alt="Logo" />
-        <ul>
+      <nav class="nav-main">
+        <img class="nav-logo" src="./images/logo.svg" alt="Logo" />
+        <ul class="nav-menu">
           <li>How we work</li>
           <li>Blog</li>
           <li>Account</li>
           <li>View plans</li>
         </ul>
+        <button class="ham-btn" type="button">
+          <span class="br-1"></span>
+          <span class="br-2"></span>
+          <span class="br-3"></span>
+        </button>
       </nav>
       <div class="image-intro"></div>
 
@@ -62,11 +67,11 @@
         <button class="viewplans-btn">View plans</button>
         <!-- View plans -->
       </section>
-      <section>
-        <h2>We’re different</h2>
+      <section class="section-2">
+        <h2 class="title">We’re different</h2>
         <article>
           <img src="./images/icon-snappy-process.svg" alt="" />
-          <h3>Snappy Process</h3>
+          <h3 class="title-2">Snappy Process</h3>
           <p>
             Our application process can be completed in minutes, not hours.
             Don’t get stuck filling in tedious forms.
@@ -74,7 +79,7 @@
         </article>
         <article>
           <img src="./images/icon-affordable-prices.svg" alt="" />
-          <h3>Affordable Prices</h3>
+          <h3 class="title-2">Affordable Prices</h3>
           <p>
             We don’t want you worrying about high monthly costs. Our prices may
             be low, but we still offer the best coverage possible.
@@ -82,29 +87,30 @@
         </article>
         <article>
           <img src="./images/icon-people-first.svg" alt="" />
-          <h3>People First</h3>
+          <h3 class="title-2">People First</h3>
           <p>
             Our plans aren’t full of conditions and clauses to prevent payouts.
             We make sure you’re covered when you need it.
           </p>
         </article>
       </section>
-      <section>
-        <h2>Find out more about how we work</h2>
-        <button>How we work</button>
+      <section class="section-3">
+        <h2 class="title">Find out more about how we work</h2>
+        <button class="work-btn">How we work</button>
       </section>
-      <section>
-        <article>
-          <img src="./images/logo.svg" alt="" />
-          <ul>
-            <li>face</li>
-            <li>twitter</li>
-            <li>pinterest</li>
-            <li>instagram</li>
+      <section class="footer">
+        <article class="article-1">
+          <img class="logo" src="./images/logo.svg" alt="" />
+          <ul class="socialmedia-box">
+            <li><i class="fab fa-facebook-square icon"></i></li>
+            <li><i class="fab fa-twitter icon"></i></li>
+            <li><i class="fab fa-pinterest icon"></i></li>
+            <li><i class="fab fa-instagram icon"></i></li>
           </ul>
         </article>
-        <article>
-          <p>Our company</p>
+        <hr class="separator-line" />
+        <article class="content ourcompany-box">
+          <p class="list-title">Our company</p>
           <ul>
             <li>How we work</li>
             <li>Why Insure?</li>
@@ -112,16 +118,8 @@
             <li>Reviews</li>
           </ul>
         </article>
-        <article>
-          <ul>
-            <li>face</li>
-            <li>twitter</li>
-            <li>pinterest</li>
-            <li>instagram</li>
-          </ul>
-        </article>
-        <article>
-          <p>Help me</p>
+        <article class="content helpme-box">
+          <p class="list-title">Help me</p>
           <ul>
             <li>FAQ</li>
             <li>Terms of use</li>
@@ -129,8 +127,8 @@
             <li>Cookies</li>
           </ul>
         </article>
-        <article>
-          <p>Others</p>
+        <article class="content others-box">
+          <p class="list-title">Others</p>
           <ul>
             <li>Careers</li>
             <li>Press</li>
