@@ -27,6 +27,10 @@
   src: url(../fonts/Karla-VariableFont_wght.ttf);
 }
 
+/* html {
+  line-height: normal;
+} */
+
 * {
   box-sizing: border-box;
 }
@@ -84,26 +88,11 @@ main {
   font-size: 20px;
   color: var(--very-light-gray);
   /* /* text-transform: uppercase;  */
-  background-color: var(--very-dark-violet);
-}
-
-.nav-menu::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  /* /* primera opción para las medidas  */
-  width: 100vw;
-  height: 34vh;
-  /* la otra forma */
-  /* height: 88vh; */
-  background-image: url(../images/bg-pattern-mobile-nav.svg);
-  background-size: cover;
+  background: url(../images/bg-pattern-mobile-nav.svg), var(--very-dark-violet);
+  background-size: 100%;
+  background-position: bottom right;
   background-repeat: no-repeat;
-  background-position: center;
-  /* la otra forma */
-  /* background-size: contain; */
-  /* background-position-y: bottom; */
+  z-index: 10;
 }
 
 .link-btn {
@@ -154,19 +143,11 @@ main {
   padding: 84px 5%;
   text-align: center;
   color: var(--very-light-gray);
-  background-color: var(--dark-violet);
-}
-
-.section-1::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40%;
-  height: 40%;
-  background-image: url(../images/bg-pattern-intro-left-mobile.svg);
+  background: url(../images/bg-pattern-intro-left-mobile.svg),
+    var(--dark-violet);
+  background-size: 168px;
+  background-position: top left;
   background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .bg-intro-right {
@@ -178,11 +159,6 @@ main {
   background-image: url(../images/bg-pattern-intro-right-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.section-1 .content {
-  position: relative;
-  z-index: 10;
 }
 
 .section-1 .title {
@@ -204,11 +180,20 @@ main {
 
 .section-2 {
   padding: 84px 5%;
+  padding: 108px 5%;
   text-align: center;
 }
 
 .section-2 > article {
   margin-top: 44px;
+}
+
+.line-wedifferent {
+  width: 40%;
+  height: 1px;
+  border: none;
+  background-color: var(--dark-grayish-violet);
+  box-sizing: border-box;
 }
 
 .section-2 .title {
@@ -236,7 +221,11 @@ main {
   width: 90%;
   text-align: center;
   color: var(--very-light-gray);
-  background-color: var(--very-dark-violet);
+  background: url(../images/bg-pattern-how-we-work-mobile.svg),
+    var(--dark-violet);
+  background-size: 176px;
+  background-position: right top;
+  background-repeat: no-repeat;
 }
 
 .section-3 .title {
@@ -261,10 +250,14 @@ main {
   color: var(--very-dark-violet);
 }
 
-.article-1 {
+.footer .article-1 {
   padding-top: 88px;
   padding-bottom: 12px;
   /* background-color: lightslategray; */
+  background: url(../images/bg-pattern-footer-mobile.svg),
+    var(--very-light-gray);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .article-1 .logo {
@@ -288,13 +281,17 @@ main {
   /* margin-left: auto; */
   /* margin-right: auto; */
   width: 90%;
-  height: 0.2px;
+  height: 1px;
   border: none;
-  background-color: blue;
+  background-color: var(--dark-grayish-violet);
+  box-sizing: border-box;
 }
 
 .footer .content {
   text-transform: uppercase;
+}
+
+.footer .article-1 {
 }
 
 .content .list-title {
