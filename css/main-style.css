@@ -52,6 +52,7 @@ button {
 
 body {
   font-family: "karla", sans-serif;
+  /* background-color: #333; */
 }
 
 main {
@@ -140,9 +141,14 @@ main {
 
 .section-1 {
   position: relative;
-  padding: 84px 5%;
+  /* padding: 84px 5%; */
   text-align: center;
   color: var(--very-light-gray);
+}
+
+.text-content {
+  position: relative;
+  padding: 84px 5%;
   background: url(../images/bg-pattern-intro-left-mobile.svg),
     var(--dark-violet);
   background-size: 168px;
@@ -258,16 +264,15 @@ main {
   text-align: center;
   /* color: var(--very-dark-violet); */
   color: var(--dark-violet);
+  background: url(../images/bg-pattern-footer-mobile.svg),
+    var(--very-light-gray);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .footer .article-1 {
   padding-top: 88px;
   padding-bottom: 12px;
-  /* background-color: lightslategray; */
-  background: url(../images/bg-pattern-footer-mobile.svg),
-    var(--very-light-gray);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .article-1 .logo {
@@ -346,6 +351,13 @@ main {
     padding: 8px 16px;
     width: initial;
     /* font-weight: bold; */
+    border-color: transparent;
+    transition-duration: 300ms;
+    transition-property: all;
+  }
+
+  .link-btn:hover {
+    color: var(--very-dark-violet);
     border-color: var(--very-dark-violet);
   }
 
@@ -355,7 +367,7 @@ main {
 
   .image-intro {
     position: absolute;
-    top: 138px;
+    top: 96px;
     right: 8%;
     width: 540px;
     height: 650px;
@@ -364,25 +376,27 @@ main {
   }
 
   .section-1 {
-    position: relative;
-    padding: 68px 52% 84px 8%;
-    padding: 68px 50% 84px 8%;
-    height: 90vh;
+    /* padding: 68px 52% 84px 8%;
+    padding: 68px 50% 84px 8%; */
+    /* padding: 96px 8% 96px 8%; */
+    /* height: 90vh; */
     text-align: initial;
-    color: var(--very-light-gray);
-    /* background: url(../images/bg-pattern-intro-left-desktop.svg),
-      var(--dark-violet);
-    background-size: 195px;
-    background-position: top left;
-    background-repeat: no-repeat; */
-    /* background: initial; */
     background: var(--dark-violet);
+  }
+
+  .text-content {
+    padding: 96px 56% 96px 8%;
+    /* padding: 0; */
+    /* width: 48%; */
+    /* background: var(--dark-violet); */
+    background: transparent;
+    overflow: hidden;
   }
 
   .bg-intro-left {
     position: absolute;
     bottom: -336px;
-    left: 0px;
+    left: 0;
     width: 195px;
     height: 504px;
     background-image: url(../images/bg-pattern-intro-left-desktop.svg);
@@ -393,7 +407,7 @@ main {
 
   .bg-intro-right {
     position: absolute;
-    top: 0;
+    top: -84px;
     right: 0;
     width: 436px;
     height: 593px;
@@ -416,7 +430,7 @@ main {
 
   .section-1 .title {
     margin-top: 0;
-    font-size: 5em;
+    font-size: 4em;
     font-family: "dmserif", serif;
     font-weight: 400;
   }
@@ -483,7 +497,11 @@ main {
     text-align: left;
     /* color: var(--very-dark-violet); */
     color: var(--dark-violet);
-    background-color: var(--very-light-gray);
+    background: url(../images/bg-pattern-footer-desktop.svg),
+      var(--very-light-gray);
+    background-size: 528px;
+    background-position-x: -116px;
+    background-repeat: no-repeat;
   }
 
   .footer .article-1 {
@@ -494,11 +512,6 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: lightslategray; */
-    background: url(../images/bg-pattern-footer-mobile.svg),
-      var(--very-light-gray);
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 
   .article-1 .logo {
