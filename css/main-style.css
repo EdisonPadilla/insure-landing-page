@@ -83,7 +83,7 @@ main {
   padding-top: 60px;
   width: 100%;
   height: 88vh;
-  display: none;
+  /* display: none; */
   text-align: center;
   font-size: 20px;
   color: var(--very-light-gray);
@@ -92,7 +92,16 @@ main {
   background-size: 100%;
   background-position: bottom right;
   background-repeat: no-repeat;
+  opacity: 0;
+  transform: translateX(100vw);
+  transition-duration: 300ms;
+  transition-property: all;
   z-index: 10;
+}
+
+.nav-menu.show {
+  opacity: 1;
+  transform: translateX(0vw);
 }
 
 .link-btn {
@@ -107,6 +116,7 @@ main {
 }
 
 .ham-btn {
+  position: relative;
   margin: 0;
   padding: 8px 10px;
   border: none;
@@ -118,6 +128,27 @@ main {
   font-size: 18px;
   line-height: normal;
   color: var(--very-dark-violet);
+  transition-duration: 300ms;
+  transition-property: all;
+}
+
+.ham-btn .bars-icon.active {
+  display: none;
+  opacity: 0;
+}
+
+.ham-btn .x-icon {
+  position: absolute;
+  font-size: 19px;
+  top: 8px;
+  left: 12px;
+  display: none;
+  opacity: 0;
+}
+
+.ham-btn .x-icon.active {
+  display: block;
+  opacity: 1;
 }
 
 /* .ham-btn span {
