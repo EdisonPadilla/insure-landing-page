@@ -71,7 +71,6 @@ main {
 
 .nav-logo {
   height: 18px;
-  /* height: 20px; */
 }
 
 .nav-menu {
@@ -112,7 +111,12 @@ main {
   text-transform: uppercase;
   background: transparent;
   border: none;
-  border: 1px solid var(--very-light-gray);
+  border: 1px solid transparent;
+  transition: all 300ms ease;
+}
+
+.link-btn:focus {
+  border-color: var(--very-light-gray);
 }
 
 .ham-btn {
@@ -133,7 +137,6 @@ main {
 }
 
 .ham-btn .bars-icon.active {
-  display: none;
   opacity: 0;
 }
 
@@ -142,23 +145,12 @@ main {
   font-size: 19px;
   top: 8px;
   left: 12px;
-  display: none;
   opacity: 0;
 }
 
 .ham-btn .x-icon.active {
-  display: block;
   opacity: 1;
 }
-
-/* .ham-btn span {
-  height: 3px;
-  width: 28px;
-  margin: 10px auto;
-  display: block;
-  background-color: var(--very-dark-violet);
-  border-radius: 2px;
-} */
 
 .image-intro {
   width: 100%;
@@ -207,6 +199,11 @@ main {
   background-color: transparent;
   border: none;
   border: 1px solid var(--very-light-gray);
+}
+
+.viewplans-btn:hover {
+  color: var(--very-dark-violet);
+  background-color: var(--very-light-gray);
 }
 
 .section-2 {
@@ -276,6 +273,11 @@ main {
   border: 1px solid var(--very-light-gray);
 }
 
+.work-btn:hover {
+  color: var(--very-dark-violet);
+  background-color: var(--very-light-gray);
+}
+
 .footer {
   text-align: center;
   color: var(--very-dark-violet);
@@ -304,8 +306,12 @@ main {
   color: var(--dark-grayish-violet);
 }
 
-.icon {
+.socialmedia-box .icon {
   font-size: 24px;
+}
+
+.socialmedia-box .icon:hover {
+  color: var(--dark-violet);
 }
 
 .separator-line {
@@ -328,3 +334,7 @@ main {
 .content .list-title {
   color: var(--dark-grayish-violet);
 }
+
+/* .content ul a:hover {
+  text-decoration: var(--dark-violet);
+} */
