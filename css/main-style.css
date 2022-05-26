@@ -343,6 +343,25 @@ body {
   text-decoration: underline;
 }
 
+.attribution {
+  margin: 16px 0;
+  font-size: 12px;
+  text-align: center;
+  color: var(--grayish-blue);
+}
+
+.attribution a {
+  padding-bottom: 0.4em;
+  color: var(--dark-grayish-violet);
+  border-bottom: solid 2px transparent;
+  transition-duration: 0.5s;
+}
+
+.attribution a:hover {
+  color: var(--dark-violet);
+  border-color: var(--dark-violet);
+}
+
 @media (min-width: 1024px) {
   .nav-main {
     padding: 0 8%;
