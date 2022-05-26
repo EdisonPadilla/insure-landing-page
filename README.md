@@ -38,7 +38,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution repository](https://github.com/EdisonPadilla/insure-landing-page)
-- Live Site URL: [live site]()
+- Live Site URL: [live site](https://edisonpadilla.github.io/insure-landing-page/)
 
 ## My process
 
